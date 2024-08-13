@@ -1,0 +1,142 @@
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+    background-color: cornflowerblue;
+    font-size: 25px;
+}
+
+nav{
+    width: 100%;
+}
+
+ul{
+    width: 50%;
+    padding: 1%;
+}
+body{
+    background-color: rgb(156, 181, 154, 1);
+}
+.portrait{
+    width: 55%;
+    float: left;
+}
+.heroImg{
+    height: 600px;
+  padding-right: 50px;
+  padding-left: 15px;
+}
+h5{
+    font-size: 28px;
+    padding: 15px;
+    margin: 20px;
+    float: right;
+}
+.content{
+    width: 750px;
+    margin: auto;
+}
+.inline-blockA{
+    list-style: none;
+    display: inline-block;
+    color: aliceblue;
+   padding: 1%;
+   vertical-align: top;
+   margin: 1%;
+   font-size: 20px;
+}
+footer{
+    background-color: #373738;
+}
+h1{
+    font-size: 50px;
+    padding: 10px;
+    margin: 20px;
+}
+h3{
+    font-size: 38px;
+    text-align: center;
+}
+h4{
+    font-size: 32px;
+    margin: 40px;
+}
+p{
+    font-size: 28px;
+    padding: 20px;
+    margin: 20px; 
+}
+.myWork{
+    border-top: solid;
+    margin: 20px;
+}
+button{
+    background-color: #ffa612;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 25px;
+    float: left;
+}
+
+.flexContainer{
+    display: flex;
+    width: 33%;
+}
+.skills{
+    padding: 10px;
+    margin: 10px;
+}
+.workGrid{
+    display: grid; 
+    grid-template-columns: 50px, 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "a a b b"
+        "a a b b"
+    ;
+}
+.A{
+    grid-area: a;
+}
+.B{
+    grid-area: b;
+}
+.sitemap{
+    height: 300px;
+}
+.wireframe{
+    height: 300px;
+}
+.usabilityTesting{
+    height: 300px;
+}
+#roadtripRations{
+    height: 300px;
+    margin: 30px;
+}
+#nspku{
+    height: 300px;
+    margin: 30px;
+}
+
+@media(max-width: 800px) {
+    .flexContainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .workGrid{
+        display: grid;
+        grid-template-rows: 900px 900px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "a"
+        "b"
+        ;
+    }
+
+}
